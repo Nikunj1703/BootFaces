@@ -45,6 +45,8 @@
             });
             function showRoomDiv() {
                 document.getElementById('roomDiv').style.display = "block";
+                hideProfessorDiv();
+                hideAddProfessorDiv();
             }
             function hideRoomDiv() {
                 document.getElementById('roomDiv').style.display = "none";
@@ -59,6 +61,8 @@
             
             function showProfessorDiv() {
                 document.getElementById('professorDiv').style.display = "block";
+                hideRoomDiv();
+                hideAddRoomDiv();
                 //return false;
             }
             function hideProfessorDiv() {
@@ -223,7 +227,7 @@
                                             <div class="caption">
                                                 <h3>List of Professors</h3>
                                                 <p>Update the List of Professors...</p>
-                                                <div align="right"><input type="button" class="btn btn-danger" value="View Rooms" onclick="showProfessorDiv()" /></div>
+                                                <div align="right"><input type="button" class="btn btn-danger" value="View Professors" onclick="showProfessorDiv()" /></div>
                                             </div>
                                         </div>
                                     </div>
